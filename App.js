@@ -23,6 +23,11 @@ export default function App() {
   const [userNumber, setUserNumber] = useState();
   const [guessRounds, setGuessRounds] = useState(0);
   const [dataLoaded, setDataLoaded] = useState(false);
+  
+//   Added rendering optimization
+  const updated=useCallback(()=>{
+    
+  },[userNumber]);
 
   if (!dataLoaded) {
 
